@@ -40,3 +40,116 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.hlavni-recept {
+    background-image: url("./images/burger.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid white;
+}
+.recept {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid white;
+}
+.recept-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.recept2 {
+    background-image: url("./images/sushi.jpg");
+}
+.recept3 {
+    background-image: url("./images/rajcata.jpg");   
+}
+.recept4 {
+    background-image: url("./images/kure.jpg");
+}
+.recept5 {
+    background-image: url("./images/grilovani.jpg"); 
+}
+h2 {
+    font-weight: 800; 
+    font-size: 28px;
+    color: white;
+}
+.recept h2 {
+    font-weight: 800;
+    font-size: 18px;
+    color: white;
+}
+.recept-kategorie,
+.recept-komentare {
+    font-weight: 400px;
+    font-size: 14px;
+    color: white;
+}
+p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-top:5px;
+}
+a { 
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+}
+a:hover {
+    background-color: #f8dcd9;
+}
+@media (min-width: 480px) { /*šířka 480 nebo širší*/
+    .hlavni-recept{
+      min-height: 250px;
+      padding: 20px;
+    }
+    .recept{
+      min-height: 150px;
+      padding: 20px;
+    }  
+    .sloupec{
+      width: 50%;
+      float: left;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .recept h2 {
+        font-size: 22px;
+    }
+  }
+@media (min-width: 860px) { /*šířka 860 nebo širší*/
+    .hlavni-recept{
+      min-height: 400px;
+      width: 33.333%;
+      float: left;
+      padding: 20px;
+    }
+    .recept{
+      min-height: 200px;
+      padding: 20px;
+    }  
+    .sloupec{
+      width: 33.333%;
+      float: left;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    .recept h2 {
+        font-size: 28px;
+    }
+  }
